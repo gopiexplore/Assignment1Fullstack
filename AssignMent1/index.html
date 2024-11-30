@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Box Height</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="heading">
+            <hr class="line">
+            <h1 >YAY! It's BOGO</h1>
+            <hr class="line">
+        </div>
+        <div class="box-container">
+            <div class="box" data-id="box1">
+                <input type="radio" id="box1" name="bogo" value="box1">
+               
+                    <div style="display: flex; gap:50px">
+                        <div >
+                            <div style="display: flex; flex-direction: row; gap: 5px;">
+                                <label for="box1">1 Unit</label>
+                                <span class="offText">10% Off</span>
+                            </div>
+                            <div>
+                                Standard Price
+                            </div>
+                            <div>
+                                <table >
+                                    <tr>
+                                      <td></td>
+                                      <td>Size</td>
+                                      <td>Color</td>
+                                    </tr>
+                                    <tr>
+                                      <td>#1</td>
+                                      <td>
+                                        <select class="Select" >
+                                            <option value="S">S</option>
+                                        </select>
+                                      </td>
+                                      <td>
+                                        <select class="Select">
+                                            <option value="Black">Black</option>
+                                        </select>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>#2</td>
+                                      <td>
+                                        <select class="Select">
+                                            <option value="S">S</option>
+                                        </select>
+                                      </td>
+                                      <td>
+                                        <select class="Select">
+                                            <option value="Colour">Colour</option>
+                                        </select>
+                                      </td>
+                                    </tr>
+                                  </table>
+                            </div>
+                        </div>
+                        <div style="display: flex; flex-direction: column;">
+                            <label for="">$10.00 USD</label>
+                            <s>$24.00 USD</s>
+                        </div>
+                    </div>
+             </div>
+               
+    
+            <div class="box " data-id="box2" >
+                <div id="trapezoid"></div>
+                <div class="label-popular">MOST POPULAR</div>
+                <input type="radio" id="box2" name="bogo" value="box2">
+                <div style="display: flex; gap:20px">
+                    <div >
+                        <div style="display: flex; flex-direction: row; gap: 5px;">
+                            <label for="box1">2 Unit</label>
+                            <span class="offText" >20% Off</span>
+                            
+                        </div>
+                        <div>
+                            <table >
+                                <tr>
+                                  <td></td>
+                                  <td>Size</td>
+                                  <td>Color</td>
+                                </tr>
+                                <tr>
+                                  <td>#1</td>
+                                  <td>
+                                    <select class="Select" >
+                                        <option value="S">S</option>
+                                    </select>
+                                  </td>
+                                  <td>
+                                    <select class="Select">
+                                        <option value="Black">Black</option>
+                                    </select>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>#2</td>
+                                  <td>
+                                    <select class="Select">
+                                        <option value="S">S</option>
+                                    </select>
+                                  </td>
+                                  <td>
+                                    <select class="Select">
+                                        <option value="Colour">Colour</option>
+                                    </select>
+                                  </td>
+                                </tr>
+                              </table>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column;">
+                        <label for="">$18.00 USD</label>
+                        <s>$24.00 USD</s>
+                    </div>
+                </div>
+            </div>
+            <div class="box" data-id="box3">
+                <input type="radio" id="box3" name="bogo" value="box3">
+                <div style="display: flex; gap:50px">
+                    <div >
+                        <div style="display: flex; flex-direction: row; gap: 5px;">
+                            <label for="box1">3 Unit</label>
+                            <span class="offText">30% Off</span>
+                        </div>
+                        <div>
+                            Standard Price
+                        </div>
+                        <div>
+                            <table >
+                                <tr>
+                                  <td></td>
+                                  <td>Size</td>
+                                  <td>Color</td>
+                                </tr>
+                                <tr>
+                                  <td>#1</td>
+                                  <td>
+                                    <select class="Select" >
+                                        <option value="S">S</option>
+                                    </select>
+                                  </td>
+                                  <td>
+                                    <select class="Select">
+                                        <option value="Black">Black</option>
+                                    </select>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>#2</td>
+                                  <td>
+                                    <select class="Select">
+                                        <option value="S">S</option>
+                                    </select>
+                                  </td>
+                                  <td>
+                                    <select class="Select">
+                                        <option value="Colour">Colour</option>
+                                    </select>
+                                  </td>
+                                </tr>
+                              </table>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column;">
+                        <label for="">$24.00 USD</label>
+                        <s>$24.00 USD</s>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="TotalText">
+            <p class="deliveryText">Free Delivery</p>
+            <p class="totalPrice">Total: $18.00 USD</p>
+          </div>
+        <button type="button" class="button">+ Add to Cart</button>
+        <p class="poweredtag">@ Powered by Pumper</p>
+    </div>
+   
+
+    <script>
+        const boxes = document.querySelectorAll('.box');
+const radios = document.querySelectorAll('input[type="radio"]');
+
+radios.forEach(radio => {
+    radio.addEventListener('change', () => {
+        // Loop through all boxes
+        boxes.forEach(box => {
+            // Hide the table in all boxes
+            const table = box.querySelector('table');
+            if (table) {
+                table.style.display = 'none';
+            }
+
+            // Remove the selected class from all boxes
+            box.classList.remove('selected');
+        });
+
+        // Add the selected class to the parent box of the checked radio
+        const selectedBox = radio.closest('.box');
+        selectedBox.classList.add('selected');
+
+        // Show the table in the selected box if it has one
+        const selectedTable = selectedBox.querySelector('table');
+        if (selectedTable) {
+            selectedTable.style.display = 'table';
+        }
+    });
+});
+
+    </script>
+</body>
+</html>

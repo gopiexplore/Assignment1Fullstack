@@ -1,0 +1,193 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    font-family: 'Inter';
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    width: 462px;
+    padding: 20px;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 12px;
+}
+
+.line {
+    width: 85.63px;
+    height: 0;
+    border: 0.9px solid #c8c8c8;
+}
+
+h1 {
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 24px;
+    color: #ff6b82;
+    margin: 0;
+}
+
+.box-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.box {
+    display: flex;            
+    width: 341px;
+    height: 74.11px;
+    border: 0.9px solid #c8c8c8;
+    transition: height 0.3s ease, background-color 0.3s ease;
+    position: relative;
+    margin-bottom: 5px;
+    padding-top: 20px;
+    padding-left: 15px;
+   
+}
+.box.selected {
+    height: 174.11px;
+    border-width: 2px;
+    border-color: #ff6b82;
+    background-color: #FFF9FA;
+}
+
+input[type="radio"] {
+    align-items: flex-start;
+appearance: none;
+width: 14.46px;
+height: 14.46px;
+border: 0.9px solid #c8c8c8; /* Border color */
+border-radius: 50%; /* Circular shape */
+margin-right: 10px;
+transition: border-color 0.3s ease, background-color 0.3s ease;
+cursor: pointer;
+
+background-color: #fff; /* Default background color */
+}
+
+input[type="radio"]:checked {
+border: 0.9px solid #ff6b82; /* Border color when checked */
+background-color: #ff6b82; /* White background inside the border */
+box-shadow: 0 0 0 3px #fff, 0 0 0 4px #ff6b82; /* Creates a gap with a white shadow and a colored shadow */
+}
+
+
+label {
+    
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#trapezoid {
+    position: absolute;
+    height: 7px;
+    top: -17px;
+    width: 129px;
+    right: 0px;
+    border-bottom: 10px solid #D7445B;
+    border-left: 12px solid transparent;
+    border-right: 6px solid transparent;
+}
+
+.label-popular {
+    position: absolute;
+    top: -10px;
+    right: 5px;
+    background-color: #ff6b82;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px 5px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    text-align: center;
+    width: 119px;
+    height: 26px;
+}
+s{
+    font-size: 10px;
+    opacity: 30%;
+}
+select {
+    appearance: none; /* Hide the default arrow */
+-webkit-appearance: none; /* Safari and Chrome */
+-moz-appearance: none; /* Firefox */
+/* background-color: #fff; */
+border: 0.9px solid #D9D9D9;
+padding: 0px;
+border-radius: 1.81px;
+width: 65.98px;
+height: 25.31px;
+position: relative;
+background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+background-repeat: no-repeat;
+background-position: right 1px center;
+}
+.button{
+    background-color: #ff6b82;
+    width: 342px;
+    height: 40px;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 500;
+    border:none;
+
+}
+.poweredtag{
+    text-align: end;
+    width: 75%;
+    font-size: 12px;
+    font-weight: 400;
+    color: #00000066;
+}
+.deliveryText{
+    color: #ff6b82; 
+    font-size: 14px; 
+    font-weight: 500;
+}
+.totalPrice{
+    font-size: 14px;
+    font-weight: 400;
+    color:#000000;
+}
+.TotalText{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%; 
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+.offText{
+    background-color: #ff6b82; 
+    padding: 3px;
+    border-radius: 1px;
+    color: #ffffff;
+}
+select{
+    padding: 5px;
+    font-size: 10.85px;
+    font-weight: 400;
+}
+table{
+    margin-top: 10px; font-size: 9.94px; font-weight: 400;
+}
+table{
+    display: none;
+}
